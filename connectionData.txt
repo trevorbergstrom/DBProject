@@ -1,0 +1,9 @@
+<?php
+
+$server = "ix-dev.cs.uoregon.edu";
+$dbname ="war_planes";
+$user = "bergsttr";
+$pass = "";
+$port="3118";
+
+?>
