@@ -27,14 +27,14 @@ or die('Error connecting to MySQL server.');
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Warbird Database</a>
+      <a class="navbar-brand" href="main.php">Warbird Database</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link" href="main.php">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -45,7 +45,7 @@ or die('Error connecting to MySQL server.');
             <a class="nav-link" href="search_main.php">Database Lookup</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="links.php">Really Cool Stuff</a>
+            <a class="nav-link" href="add_link.php">Add Links to Aircraft</a>
           </li>
           <li class='nav-item'>
             <a class="nav-link" href="add_item.php">Add an Aircraft</a>
@@ -101,7 +101,7 @@ or die('Error connecting to MySQL server.');
               <div class="carousel-item">
                 <!--Mask color-->
                 <div class="view">
-                  <img class="d-block w-100" src="img/p38.jpg" alt="Third slide">
+                  <img class="d-block w-100" src="img/p38.jpeg" alt="Third slide">
                   <div class="mask rgba-black-light"></div>
                 </div>
                 <div class="carousel-caption">
@@ -123,68 +123,11 @@ or die('Error connecting to MySQL server.');
             <!--/.Controls-->
           </div>
           <!--/.Carousel Wrapper-->
-          <li>Add Aircraft</li>
-        </ul>
 
-        <!-- Example split danger button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-danger">View By Country</button>
-  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <button type="button" class="btn btn-primary">View My Manufacturer</button>
-  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Separated link</a>
-  </div>
-</div>
+<br/>
 
-<select name="owner">
-<?php 
-$sql = mysqli_query($conn, "SELECT name FROM Country") or die(mysqli_error($conn));
-while ($row = mysqli_fetch_array($sql)){
-    
-echo '<option value="'.$row['name'].'">';
-echo $row['name'];
-echo"</option>";
-}
-?>
-</select>
-
-      </div>
-    </div>
-  </div>
-<div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Search by Manufacturer
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-        <?php
-        $sql=mysqli_query($conn, "SELECT name FROM Manufact") or die(mysqli_error($conn));
-        while($row = mysqli_fetch_array($sql)){
-            echo '<li><a href="#">'.$row['name'].'</a></li>';
-        }
-        ?>
-    </ul>
-</div>
-
-<div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Search by Engine Type
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-        <?php
-        $sql=mysqli_query($conn, "SELECT DISTINCT type FROM Engine") or die(mysqli_error($conn));
-        while($row = mysqli_fetch_array($sql)){
-            echo '<li><a href="#">'.$row['type'].'</a></li>';
-        }
-        ?>
-    </ul>
-</div>
+<br/>
+<br/>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
