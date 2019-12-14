@@ -66,6 +66,11 @@ or die('Error connecting to MySQL server.');
         <p class="lead">It's kinda cool for nerds</p>
         <p>This is a database of aircraft. You can search aircraft and by specific search terms or view all. Click on the 'Database Lookup' link in the header to start searching!.</p>
         <p>If you would like to add an aircraft, please do  so carefully as missing values could corrupt the datbase. And please dont try and drop  any tables or the databse! Thanks. </p>
+
+        <p> This is a project by Trevor Bergstrom for CIS551 Database Processing, University of Oregon,  Fall 2019</p>
+
+        <p> All source code can be found at: </p>
+        <p><a href"https://github.com/trevorbergstrom/DBProject">https://github.com/trevorbergstrom/DBProject</a></p>
 <br/>
 
 <br/>

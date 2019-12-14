@@ -63,9 +63,8 @@ or die('Error connecting to MySQL server.');
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1 class="mt-5">A Database of Aircraft</h1>
-        <p class="lead">It's kinda cool for nerds</p>
+        <p class="lead">Use the navigation links above</p>
         <ul class="list-unstyled">
-          <li>View Aircraft</li>
           <!--Carousel Wrapper-->
           <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
             <!--Indicators-->
@@ -83,8 +82,6 @@ or die('Error connecting to MySQL server.');
                   <div class="mask rgba-black-light"></div>
                 </div>
                 <div class="carousel-caption">
-                  <h3 class="h3-responsive">This is the first title</h3>
-                  <p>First text</p>
                 </div>
               </div>
               <div class="carousel-item">
@@ -94,8 +91,6 @@ or die('Error connecting to MySQL server.');
                   <div class="mask rgba-black-light"></div>
                 </div>
                 <div class="carousel-caption">
-                  <h3 class="h3-responsive">Thir is the second title</h3>
-                  <p>Secondary text</p>
                 </div>
               </div>
               <div class="carousel-item">
@@ -105,8 +100,6 @@ or die('Error connecting to MySQL server.');
                   <div class="mask rgba-black-light"></div>
                 </div>
                 <div class="carousel-caption">
-                  <h3 class="h3-responsive">This is the third title</h3>
-                  <p>Third text</p>
                 </div>
               </div>
             </div>
